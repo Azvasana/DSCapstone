@@ -1,0 +1,49 @@
+body {
+  background-color: #f5f5dc;
+  font-family: 'Georgia', serif;
+  color: #3e2723;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+  color: #3e2723;
+}
+
+.navbar {
+  background-color: #8d6e63 !important;
+  border-color: #5d4037 !important;
+}
+
+.panel {
+  background-color: #fff8e1;
+  border-color: #5d4037;
+}
+
+.panel-heading {
+  background-color: #bcaaa4 !important;
+  color: #3e2723 !important;
+}
+
+.btn-primary {
+  background-color: #8d6e63;
+  border-color: #5d4037;
+}
+
+.btn-primary:hover {
+  background-color: #6d4c41;
+  border-color: #5d4037;
+}
+
+input, select, textarea {
+  background-color: #fff8e1;
+  border: 1px solid #8d6e63;
+  color: #3e2723;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #5d4037;
+  box-shadow: none;
+}
+
+.shiny-output-error {
+  color: #d32f2f;
+}
