@@ -1,0 +1,57 @@
+---
+title: "Shiny App Presentation"
+author: "Kritika Gowda"
+date: "2024-07-24"
+output: ioslides_presentation
+---
+
+## Introduction
+
+### Next Word Prediction App
+
+Welcome to the Next Word Prediction App, designed to predict the next word(s) in a given phrase.
+
+-   **Algorithm**: Utilizes bigrams, trigrams, and quadgrams.
+-   **Features**: User-friendly interface with predictive text functionality.
+-   **Additional Resources:** [GitHub Code](#0)
+
+## Algorithm Description
+
+### How It Works
+
+1.  **Data Sources**: Trained on bigrams, trigrams, and quadgrams from large text corpora.
+2.  **Prediction Process**:
+    -   **Bigrams**: Uses the last word to predict the next word.
+    -   **Trigrams**: Uses the last two words.
+    -   **Quadgrams**: Uses the last three words for more accurate predictions.
+3.  **Fallback Mechanism**: In case of no match, defaults to the most frequent predictions.
+
+## App Overview
+
+### Key Features
+
+-   **Input**: Enter a phrase in the text box.
+-   **Slider**: Adjust the number of words to predict.
+-   **History**: View past predictions and their frequency.
+-   **About**: Learn more about the app and its creator.
+
+### User Instructions
+
+1.  Type a phrase and click "Predict Next Word".
+2.  Select the number of predictions from the slider.
+3.  View the predicted words and prediction history.
+
+## Novelty and Evaluation
+
+### App Experience
+
+-   **Intuitive Interface**: Simple and easy-to-use interface.
+-   **Instant Predictions**: Fast and responsive predictions.
+-   **Feedback Mechanism**: View prediction history and most frequent predictions.
+-   **Design**: Cozy and professional look with the sandstone theme.
+
+### App Evaluation
+
+-   **Novelty**: Combines 3 n-grams for improved accuracy.
+-   **Quality**: Aesthetic user interface and reliable predictions.
+-   **Hiring**: The app demonstrates strong skills in data science and software development.
