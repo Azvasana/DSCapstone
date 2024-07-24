@@ -1,12 +1,10 @@
 library(shiny)
 library(dplyr)
 
-# Load the n-gram models
 bigrams <- readRDS("bigrams.rds")
 trigrams <- readRDS("trigrams.rds")
 quadgrams <- readRDS("quadgrams.rds")
 
-# Function to predict the next words using quadgrams, trigrams, and bigrams
 predict_next_words <- function(phrase, num_words) {
   words <- unlist(strsplit(phrase, " "))
   predictions <- character()
@@ -53,7 +51,6 @@ predict_next_words <- function(phrase, num_words) {
 }
 
 server <- function(input, output, session) {
-  # Reactive value to store prediction history
   history <- reactiveVal(data.frame(Phrase = character(), Prediction = character(), stringsAsFactors = FALSE))
   
   observeEvent(input$predict, {
@@ -61,7 +58,6 @@ server <- function(input, output, session) {
     num_words <- input$num_predictions
     next_words <- predict_next_words(phrase, num_words)
     
-    # Update prediction history
     new_entry <- data.frame(Phrase = phrase, Prediction = paste(next_words, collapse = " "), stringsAsFactors = FALSE)
     updated_history <- rbind(history(), new_entry)
     history(updated_history)
@@ -75,7 +71,6 @@ server <- function(input, output, session) {
       )
     })
     
-    # Create frequent predictions table
     freq_data <- updated_history %>%
       unnest_tokens(word, Prediction) %>%
       count(word, sort = TRUE)

@@ -5,7 +5,6 @@ ui <- navbarPage(
   theme = shinytheme("sandstone"),
   title = "Next Word Prediction App",
   
-  # Main Tab
   tabPanel(
     "Predictor",
     sidebarLayout(
@@ -35,7 +34,6 @@ ui <- navbarPage(
     )
   ),
   
-  # Info Tab
   tabPanel(
     "About",
     mainPanel(
@@ -52,7 +50,7 @@ ui <- navbarPage(
       h4("Additional Resources:"),
       tags$ul(
         tags$li(a(href = "https://rpubs.com/kgowda1/1206009", "View Presentation Explaining App Here")),
-        tags$li(a(href = "https://github.com/your-repository", "View Code Used on GitHub Here"))
+        tags$li(a(href = "https://github.com/Azvasana/DSCapstone", "View Code Used on GitHub Here"))
       )
     )
   )

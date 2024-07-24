@@ -13,7 +13,7 @@ Welcome to the Next Word Prediction App, designed to predict the next word(s) in
 
 -   **Algorithm**: Utilizes bigrams, trigrams, and quadgrams.
 -   **Features**: User-friendly interface with predictive text functionality.
--   **Additional Resources:** [GitHub Code](#0)
+-   **Additional Resources:** [GitHub Code](https://github.com/Azvasana/DSCapstone)
 
 ## Algorithm Description
 

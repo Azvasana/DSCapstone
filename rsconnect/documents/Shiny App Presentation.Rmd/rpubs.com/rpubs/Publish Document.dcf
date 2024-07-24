@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/1206009/2b713f9cc3ae43d8a5e781becd22efbe
+bundleId: https://api.rpubs.com/api/v1/document/1206009/2b713f9cc3ae43d8a5e781becd22efbe
+url: http://rpubs.com/kgowda1/1206009
+version: 1
